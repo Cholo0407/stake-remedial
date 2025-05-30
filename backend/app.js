@@ -3,6 +3,7 @@ import cookieParser from "cookie-parser";
 import cors from "cors"
 
 import gamesRoutes from "./src/routes/games.js"
+import clientRoutes from "./src/routes/customers"
 
 const app = express();
 
@@ -20,4 +21,5 @@ app.use(cookieParser());
 // Rutas
 
 app.use("/api/games", gamesRoutes)
+app.use("/api/customers", clientRoutes)
 export default app;
