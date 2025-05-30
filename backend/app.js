@@ -3,7 +3,7 @@ import cookieParser from "cookie-parser";
 import cors from "cors"
 
 import gamesRoutes from "./src/routes/games.js"
-import clientRoutes from "./src/routes/customers"
+import clientRoutes from "./src/routes/customers.js"
 
 const app = express();
 
