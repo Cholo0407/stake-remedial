@@ -9,7 +9,7 @@ const app = express();
 
 app.use(
     cors({
-      origin: "https://stake-remedial.vercel.app",
+      origin: "http://localhost:5173",
       // Permitir envío de cookies y credenciales
       credentials: true
     })
