@@ -43,7 +43,7 @@ customersController.createclient = async (req, res) => {
     res.status(201).json({ message: "Customer registered" });
   } catch (error) {
     console.error("Error al crear cliente:", error);
-    res.status(500).json({ message: "Error registering Customer" });
+    res.status(500).json({ message: "Error registering client" });
   }
 }; // ← ERROR corregido: este método no estaba cerrado
 
@@ -82,13 +82,13 @@ customersController.updatecustomers = async (req, res) => {
     );
 
     if (!updatedCustomer) {
-      return res.status(404).json({ message: "Cliente no encontrado" });
+      return res.status(404).json({ message: "client not found" });
     }
 
-    res.json({ message: "Cliente actualizado correctamente" });
+    res.json({ message: "Customer updated correctly" });
   } catch (error) {
     console.error("Error al actualizar cliente:", error);
-    res.status(500).json({ message: "Error al actualizar el cliente" });
+    res.status(500).json({ message: "Error updating client" });
   }
 };
 
