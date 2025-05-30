@@ -1,14 +1,16 @@
-import { useState } from 'react'
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Games from './pages/Games.jsx';
+import GamesManage from './pages/GamesManage.jsx';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<Games />} />
+        <Route path="/manage-games" element={<GamesManage />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
