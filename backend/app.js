@@ -9,7 +9,7 @@ const app = express();
 
 app.use(
     cors({
-      origin: "https://stake-remedial.vercel.app/",
+      origin: "https://stake-remedial.vercel.app",
       // Permitir envío de cookies y credenciales
       credentials: true
     })
